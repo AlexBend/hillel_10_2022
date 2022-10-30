@@ -2,6 +2,7 @@ name: Check code quality
 
 on: [push]
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
