@@ -20,5 +20,5 @@ pipenv sync
 pipenv lock
 
 # pipenv lock & pipenv sync
-pipenv updane
+pipenv update
 ```
