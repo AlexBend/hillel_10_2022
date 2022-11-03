@@ -8,7 +8,7 @@ ROCKYOU = LESSON_4_DIR / "rockyou.txt"
 
 input_date = input()
 
-coinc_list = []
+match_list = []
 
 
 def filter_lines(filename: Path, pattern: str) -> Generator:
@@ -24,10 +24,10 @@ def filter_lines(filename: Path, pattern: str) -> Generator:
 
 
 for d in filter_lines(ROCKYOU, input_date):
-    coinc_list.append(d + "\n")
+    match_list.append(d + "\n")
 
 with open(TEMPROCK, "w") as file:
-    file.writelines(coinc_list)
+    file.writelines(match_list)
 
 stats = os.stat(TEMPROCK)
 print(stats.st_size, "bites")
