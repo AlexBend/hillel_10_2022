@@ -10,7 +10,6 @@ input_date = input()
 
 match_list = []
 
-
 def filter_lines(filename: Path, pattern: str) -> Generator:
     with open(filename, encoding="utf-8") as f:
         while True:
