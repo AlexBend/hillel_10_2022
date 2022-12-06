@@ -16,7 +16,8 @@ class ExchangeRate:
             return "currency is not supported"
         if self.currency == other.currency:
             return ExchangeRate(
-                amount=self.amount + other.amount, currency=self.currency
+                amount=self.amount + other.amount,
+                currency=self.currency,
             )
         else:
             self_result = self.amount / er_service.rates[self.currency]
@@ -29,7 +30,8 @@ class ExchangeRate:
             return "currency is not supported"
         if self.currency == other.currency:
             return ExchangeRate(
-                amount=self.amount - other.amount, currency=self.currency
+                amount=self.amount - other.amount,
+                currency=self.currency,
             )
         else:
             self_result = self.amount / er_service.rates[self.currency]

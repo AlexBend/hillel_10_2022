@@ -21,7 +21,11 @@ def get_user(name: str, age: int):
 
 
 # TEST OUTPUT
-print(get_user(name="Alice", age=30), get_user(name="Bob", age=25), sep="\n")
+print(
+    get_user(name="Alice", age=30),
+    get_user(name="Bob", age=25),
+    sep="\n",
+)
 
 
 """example 2 """
@@ -48,4 +52,8 @@ def get_user(name: str, age: int):
 
 
 # TEST OUTPUT
-print(get_user(name="Alice", age=30), get_user(name="Bob", age=25), sep="\n")
+print(
+    get_user(name="Alice", age=30),
+    get_user(name="Bob", age=25),
+    sep="\n",
+)
